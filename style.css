@@ -8,10 +8,17 @@
   font-weight: normal;
   font-style: normal;
 }
-
+h1{
+  margin-left: 5%;
+  margin-right: 20%;
+  float: left;
+}
 @media screen and (max-width: 700px){
 header{
   display: inline;
+}
+nav{
+  float: right;
 }
   .main-nav {
     padding: 0.1em;
@@ -31,6 +38,10 @@ header{
   }
   .projects{
     border: 2px solid black;
+    margin-left: 5%;
+    margin-right: 50%;
+    clear: both;
+
   }
   *{
     background-color: beige;
