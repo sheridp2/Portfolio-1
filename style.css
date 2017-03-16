@@ -8,44 +8,89 @@
   font-weight: normal;
   font-style: normal;
 }
-h1{
-  margin-left: 5%;
-  margin-right: 20%;
-  float: left;
-}
+
+
+
 @media screen and (max-width: 700px){
-header{
+  *{
+    font-family: monospace;
+    /*background-image: url('vendor/portfoliobackground.jpeg');
+    background-size: cover;*/
+    color:
+  }
+  header{
   display: inline;
-}
-nav{
+  }
+  nav{
   float: right;
-}
+  }
   .main-nav {
     padding: 0.1em;
+    width: 100%;
+    text-align: center;
   }
   .icon-menu:before {
-	content: "\1f5c4";
-}
+	content: "\2261";
+  float: right;
+  width: 5%;
+  height: 5%;
+  }
   .main-nav ul {
     display: none;
-    padding: 0;
     list-style: none;
     clear: both;
   }
-
+  .main-nav li{
+    padding: 0.5em;
+    margin: 3%;
+    text-align: center;
+    border: 4px solid gray;
+    background-color: black;
+  }
+  a{
+    text-decoration-color: white;
+    color: white;
+    text-shadow: none;
+  }
   .main-nav:hover ul {
     display: inline-block;
+    width: 100;
   }
-  .projects{
-    border: 2px solid black;
-    margin-left: 5%;
-    margin-right: 50%;
+  img{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div{
     clear: both;
+  }
+  header{
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+  h1{
+    padding: 5%;
+    float: left;
+  }
+  li{
+    font-size: 12px;
+    /*display: inline;*/
+    text-decoration: none;
+  }
 
+  .project-pics, .info, .projects, .skills{
+    /*border: 2px solid black;*/
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 75%;
+    text-align: left;
   }
-  *{
-    background-color: beige;
-  }
+
+
 }
 
 /* browser view */
@@ -55,5 +100,35 @@ nav{
     padding: 0;
     list-style: none;
     clear: both;
+  }
+  header{
+    text-align: center;
+    padding: 5%;
+  }
+  h1{
+    padding: 5%;
+  }
+  li{
+    font-size: 12px;
+  }
+  img{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .project-pics, .info, .projects, .skills{
+    /*border: 2px solid black;*/
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 75%;
+    text-align: left;
+  }
+
+  *{
+    background-color: gray;
+    font-family: monospace;
   }
 }
