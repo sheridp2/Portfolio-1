@@ -2,26 +2,26 @@
 var projectData = [
   {
     title: 'Escape code 201',
+    date: '3.17.17',
     img: 'assets/escapeCodePic.png',
-    description: 'blahblah',
-    date: 'blank1',
-    contributors: 'blank1',
-    link: 'blank1'
+    link: 'Escapecode201.com',
+    description: 'this is where the descrioption for escape 201 should go',
+    contributors: 'Saul Greene, Michael Treat, Carlo Santos, Kevin Schmidt'
   },
   {
-    title: 'Blank2',
+    title: 'Bus Mall',
     img: 'assets/escapeCodePic.png',
-    description: 'Blank2',
-    date: 'Blank2',
-    contributors: 'Blank2',
-    link: 'Blank2',
+    description: 'where busmall should go',
+    date: '2.20.17',
+    contributors: 'Saul Greene',
+    link: 'BusMall.com'
   },
   {
-    title: 'Blank3',
+    title: 'About Saul',
     img: 'assets/escapeCodePic.png',
-    description: 'Blank3',
-    date: 'Blank3',
-    contributors: 'Blank3',
-    link: 'Blank3',
+    description: 'where about saiul project should go',
+    date: '2.14.17',
+    contributors: 'Saul Greene',
+    link: 'AboutSaul.com'
   }
 ]
