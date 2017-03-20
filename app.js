@@ -32,9 +32,10 @@ allProjects.forEach(function(somethingDifferent){
   $('.projects').append(somethingDifferent.toHtml());
 });
 
-// allProjects.handleMainNav = function () {
+
+  $('.nav-content').hide();
   $('.main-nav').on('click', '.nav', function(){
     $('.nav-content').hide();
+    $('.home').hide();
     $('#' + $(this).attr('data-content')).fadeIn();
   })
-// }
