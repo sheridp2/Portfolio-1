@@ -13,10 +13,7 @@ function Project(argument){
 
 Project.prototype.toHtml = function() {
   var source = $('#template').text();
-  console.log('source' + source);
   var templateRender = Handlebars.compile(source);
-  console.log('templaterender' + templateRender(this));
-
   return templateRender(this);
 };
 
