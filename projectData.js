@@ -4,7 +4,7 @@ var projectData = [
     title: 'Escape code 201',
     date: '3.17.17',
     img: 'assets/escapeCodePic.png',
-    link: 'PLACEHOLDER',
+    link: 'https://michaeltreat.github.io/Escape-code-201/',
     description: 'this is where the descrioption for escape 201 should go',
     contributors: 'Saul Greene, Michael Treat, Carlo Santos, Kevin Schmidt'
   },
