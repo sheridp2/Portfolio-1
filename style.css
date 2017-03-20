@@ -13,10 +13,16 @@
 
 /*@media screen and (max-width: 700px){*/
   *{
-    font-family: monospace;
+    font-family: sans-serif;
     /*background-image: url('vendor/portfoliobackground.jpeg');
     background-size: cover;*/
     color:
+  }
+  h2{
+    margin-left: 5%;
+  }
+  li{
+    margin-left: 5%;
   }
   header{
   display: inline;
@@ -25,7 +31,11 @@
   float: right;
   }
   .projects img{
-    width: 50%;
+    width: 170%;
+    %;
+    border: 4px solid gray;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .projects{
     width: 50%;
@@ -46,6 +56,7 @@
     list-style: none;
     clear: both;
   }
+
   .template{
     display: none;
   }
@@ -57,8 +68,8 @@
     background-color: black;
   }
   a{
-    text-decoration-color: black;
-    color: black;
+    text-decoration-color: gray;
+    color: gray;
     text-shadow: none;
   }
   .main-nav:hover ul {
@@ -92,6 +103,9 @@
     /*display: inline;*/
     text-decoration: none;
   }
+  p{
+    margin-left: 5%;
+  }
 
   .project-pics, .info, .skills{
     /*border: 2px solid black;*/
@@ -102,6 +116,9 @@
     margin-bottom: 3%;
     width: 75%;
     text-align: left;
+  }
+  .description, .contributors, .link, .date, .title{
+    margin-left: 10%;
   }
 .projects{
   width: 50%;

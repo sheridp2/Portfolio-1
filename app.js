@@ -11,23 +11,21 @@ function Project(argument){
   this.img = argument.img;
 }
 
+Project.prototype.toHtml = function() {
+  var source = $('#template').text();
+  console.log('source' + source);
+  var templateRender = Handlebars.compile(source);
+  console.log('templaterender' + templateRender(this));
+
+  return templateRender(this);
+};
+
+
+
 projectData.forEach(function(object){
   allProjects.push(new Project(object));
 });
 
-Project.prototype.toHtml = function(){
-  var $newprojectData = $('div.template').clone();
-  $newprojectData.removeClass('template');
-  $newprojectData.addClass('');
-  $newprojectData.find('div.title').html(this.title);
-  $newprojectData.find('p.date').html(this.date);
-  $newprojectData.find('img.project').attr('src', this.img);
-  $newprojectData.find('a.link').attr('href', this.link);
-  $newprojectData.find('a').html('Check out this site');
-  $newprojectData.find('p.description').html(this.description);
-  $newprojectData.find('p.contributors').html(this.contributors);
-  return $newprojectData;
-};
 
 allProjects.forEach(function(somethingDifferent){
   console.log(somethingDifferent);
@@ -40,5 +38,3 @@ allProjects.forEach(function(somethingDifferent){
     $('#' + $(this).attr('data-content')).fadeIn();
   })
 // }
-
-// allProjects.handleMainNav();
