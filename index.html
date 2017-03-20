@@ -30,19 +30,21 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
     <section class="nav-content" id="projects">
-    <div class="projects">
-      <h2>Projects</h2>
-      <div class="template">
-        <div class="title">Title</div><br>
-        <p class="date">../../....</p><br>
-        <img class="project" src="#" alt=""><br>
-        <a class="link" href="https://github.com/Saulgreene">GitHub</a><br><br>
-        <p class="description">Description</p><br>
-        <p class="contributors">Contributors</p><br>
-        </div>
+      <div class="projects">
+        <script id="template" type="text/x-handlebars-template">
+              <h1>{{title}}</h1>
+              <div class="date">
+                Created On: {{date}}
+              </div>
+              <section>
+                <img class="project" src="{{img}}" alt="">
+                <a class="link" href="#">{{link}}</a>
+                <p class="description">{{description}}</p>
+                <p class="contributors">{{contributors}}</p>
+              </section>
+        </script>
       </div>
-    </div>
-  </section>
+    </section>
   <section class="nav-content" id="skills">
     <div class="skills">
       <h2>Skills</h2>
@@ -58,11 +60,8 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </section>
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script type="text/javascript" src="projectData.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>
