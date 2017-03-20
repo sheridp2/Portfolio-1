@@ -13,10 +13,7 @@ function Project(argument){
 
 Project.prototype.toHtml = function() {
   var source = $('#template').text();
-  console.log('source' + source);
   var templateRender = Handlebars.compile(source);
-  console.log('templaterender' + templateRender(this));
-
   return templateRender(this);
 };
 
@@ -32,9 +29,10 @@ allProjects.forEach(function(somethingDifferent){
   $('.projects').append(somethingDifferent.toHtml());
 });
 
-// allProjects.handleMainNav = function () {
+
+  $('.nav-content').hide();
   $('.main-nav').on('click', '.nav', function(){
     $('.nav-content').hide();
+    $('.home').hide();
     $('#' + $(this).attr('data-content')).fadeIn();
   })
-// }
