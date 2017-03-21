@@ -11,6 +11,7 @@
   nav{
   float: right;
   }
+  /*Patrick was here, did not change code below but needs revising, also added % to all */
   .projects img{
     width: 170%;
     %;
@@ -59,20 +60,20 @@
   }
   img{
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0%;
+    margin-right: 0%;
   }
   img .project-pics{
     width: 50%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0%;
+    margin-right: 0%;
   }
   div{
     clear: both;
   }
   header{
     text-align: center;
-    padding: 0;
+    padding: 0%;
     width: 100%;
   }
   h1{
@@ -115,7 +116,7 @@
 @media screen and (min-width: 700px){
   .main-nav ul li {
     display: inline-block;
-    padding: 0;
+    padding: 0%;
     list-style: none;
     clear: both;
   }
@@ -123,8 +124,12 @@
     text-align: center;
     padding: 5%;
   }
+  header img{
+    display: none;
+  }
   #head-img{
     display: none;
+
   }
   h1{
     padding: 5%;
@@ -134,8 +139,8 @@
   }
   img{
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0%;
+    margin-right: 0%;
   }
   .project-pics, .info, .projects, .skills{
     /*border: 2px solid black;*/
@@ -149,7 +154,7 @@
   }
 
   *{
-    background-color: gray;
+    background-color: white;
     font-family: monospace;
   }
 }
