@@ -30,9 +30,9 @@ allProjects.forEach(function(somethingDifferent){
 });
 
 
+$('.nav-content').hide();
+$('.main-nav').on('click', '.nav', function(){
   $('.nav-content').hide();
-  $('.main-nav').on('click', '.nav', function(){
-    $('.nav-content').hide();
-    $('.home').hide();
-    $('#' + $(this).attr('data-content')).fadeIn();
-  })
+  $('.home').hide();
+  $('#' + $(this).attr('data-content')).fadeIn();
+})

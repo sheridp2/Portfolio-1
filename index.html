@@ -18,20 +18,21 @@
     <img src="assets/sglogo.png" id="head-img"alt="">
     <nav class="main-nav">
       <!-- <h1>Saul Greene</h1> -->
-      <span class="icon-menu"></span>
+      <!-- <span class="icon-menu"></span> -->
+      <i id="bars" class="fa fa-bars" aria-hidden="true"></i>
       <ul>
         <li class="nav" data-content= "home"><a href="#">HOME</a></li>
         <li class="nav" data-content= "about"><a href="#">ABOUT</a></li>
         <li class="nav" data-content="projects"><a href="#">PROJECTS</a></li>
         <li class="nav" data-content="skills"><a href="#">SKILLS</a></li>
         <li class="nav" data-content="info"><a href="#">INFO</a></li>
-        <li><a href="https://github.com/Saulgreene">Github</a></li>
+        <li><a href="https://github.com/Saulgreene"><i class="fa fa-github" aria-hidden="true"></i>Github</a></li>
       </ul>
     </nav>
   </header>
   <body>
     <section class="home" id="home">
-      <h2>HOME PAGE</h2>
+      <h2></h2>
     </section>
     <section class="nav-content" id="about">
       <h2>About</h2>
@@ -45,10 +46,10 @@
                 Created On: {{date}}
               </div>
               <section>
-                <img class="project" src="{{img}}" alt="">
-                <a class="link" href="{{link}}">View Project</a>
-                <p class="description">{{description}}</p>
-                <p class="contributors">{{contributors}}</p>
+                <img class="project" src="{{img}}" alt="{{link}}">
+                <a class="link" href="{{link}}">View Project</a></br></br>
+                <p class="description">{{description}}</p></br>
+                <p class="contributors">Contributors: {{contributors}}</p>
               </section>
         </script>
       </div>
@@ -82,8 +83,7 @@
   </body>
   <footer>
     <p>Portfolio Site Beta 1.0.2</p>
-    <p>Saul Greene</p>
-    <p>253.397.8733</p>
+    <p>Saul Greene | 253.397.8733 </p>
     <p class="icons"><a href="mailto:spdysg@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
     <p class="icons"><a href="https://www.linkedin.com/in/saul-greene-257ba0132/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
     <p class="icons"><a href="https://github.com/Saulgreene"><i class="fa fa-github" aria-hidden="true"></i></a></p>
